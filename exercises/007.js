@@ -49,6 +49,10 @@ var customerData = {
 
 function greetCustomer(firstName) {
   var greeting = '';
+  let numVisits = customerData[firstName].visits;
+
+  if (numVisits)
+
   // your code here
 
   return greeting;

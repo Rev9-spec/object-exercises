@@ -19,7 +19,26 @@ For instance, if the input had 6 values instead of 4, your code should flexibly 
 Starter Code:
 */
 
-function fromListToObject(array) {
-  // your code here
+/*function fromListToObject(array) {
+  let newObj = Object.fromEntries(array);
 
-}
+  // your code here
+  return newObj;
+};*/
+
+
+
+//This is another way to do the problem above from scratch---
+
+function fromListToObject(array) {
+    var newObj = {};
+
+    for (let i = 0; i < array.length; i++) {
+      const element = array[i];
+
+      newObj[element[0]] = element[1];
+    }
+    return newObj;
+};
+
+
